@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <h2>Employee Registration Form</h2>
+        <form (ngSubmit)="createEmployee()">
+            <div class="pt-2 form-group">
+                <input type="text" class="form-control" name="empid" placeholder="Employee ID" [(ngModel)]="employee.empid">
+            </div>
+            <div class="pt-2 form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name" [(ngModel)]="employee.name">
+            </div>
+            <div class="pt-2 form-group">
+                <input type="text" class="form-control" name="dob" placeholder="Date of birth" [(ngModel)]="employee.dob">
+            </div>
+            <div class="pt-2 form-group">
+                <input type="text" class="form-control" name="salary" placeholder="Salary" [(ngModel)]="employee.salary">
+            </div >
+            <div class="pt-2 text-center">
+                <button type="submit" class="btn btn-primary" >Register</button><br><br>
+                <button type="reset" class="btn btn-primary" >Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

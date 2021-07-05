@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+    <thead>
+        <th>EMP ID</th>
+        <th>Name</th>
+        <th>Date Of Birth</th>
+        <th>Salary</th>
+        <th></th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u.empid}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.dob}}</td>
+            <td>{{u.salary}}</td>
+            <td>
+            <button class="btn btn-link" (click)="deleteEmployee(u.empid)">Delete</button>
+            <button class="btn btn-link" (click)="updateEmployee(u.empid)">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

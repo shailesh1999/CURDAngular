@@ -1,0 +1,133 @@
+<h1>Hello Angular....</h1>
+<!--<div class="container">-->
+<!--<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <td>First Name</td>
+            <td>{{fname}}</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{lname}}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+            <td>Gender</td>
+            <td>{{gender}}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+            <td>Age</td>
+            <td>{{age}}</td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-outline-primary" (click)="clickMe()">
+    {{showDetails?'Hide':'Show'}}
+</button>-->
+    <!--<h1>NG IF EXAMPLE</h1>
+    <table class="table table-bordered">
+        <tbody *ngFor="let e of emps" >
+            <tr *ngIf="e.country==='India'" class="text-primary">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+            <tr *ngIf="e.country==='USA'" class="text-danger">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+            <tr *ngIf="e.country==='Japan'" class="text-success">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <h1>NG SWITCH EXAMPLE</h1>
+    <table class="table table-bordered">
+        <tbody *ngFor="let e of emps" [ngSwitch]="e.country">
+            <tr *ngSwitchCase="'India'" class="text-primary">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+            <tr *ngSwitchCase="'USA'" class="text-danger">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+            <tr *ngSwitchCase="'Japan'" class="text-success">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>-->
+<!--<h1>{{message}}</h1>
+<div [hidden]='isDisabled'>
+    <h1>This content is available for you.</h1>
+</div>-->
+
+<!--<div class="container">
+    <h1>EMPLOYEE DETAILS</h1>
+    <div class="pt-2 row">
+        <input type="text" class="form-control" [(ngModel)]='name' placeholder="Enter Name">
+    </div>
+    <div class="pt-2 row">
+        <input type="text" class="form-control" [(ngModel)]='age' placeholder="Enter Age">
+    </div>
+    <div class="pt-2 row">
+        <input type="text" class="form-control" [(ngModel)]='country' placeholder="Enter Country">
+    </div>
+    <div class="pt-2 row">
+        <button class="btn btn-success" (click)="addEmployee()">ADD EMPLOYEE</button>
+    </div>
+</div>
+<div class="pt-2 container">
+    <table class="table table-bordered">
+        <tbody>
+            <tr *ngFor="let e of emps">
+                <td>{{e.name}}</td>
+                <td>{{e.age}}</td>
+                <td>{{e.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>-->
+<!--<div class="container">
+    <h1>Employee Form</h1>
+    <div class="pt-2 form-group">-->
+      <!-- Name: <input type="text" class="form-control"  [(ngModel)]="name"  placeholder="Enter Name">   -->
+      <!--Name: <input type="text" class="form-control"   #newName placeholder="Enter Name">  
+    </div>
+  
+    <div class="pt-2 form-group">
+      Name: <input type="text" class="form-control"  #newAge placeholder="Enter Age">  
+    </div>
+  
+    <div class="pt-2 form-group">
+      Name: <input type="text" class="form-control"  #newCountry placeholder="Enter Country">  
+    </div>-->
+    
+    <!--<div class="pt-2 form-group">-->
+      <!-- <button class="btn btn-success" (click)="addEmployee()">Add Employee</button> -->
+      <!--<button class="btn btn-success" (click)="addEmployee(newName.value,newAge.value,newCountry.value)">Add Employee</button> 
+    </div>
+  </div>
+  <div class="container">
+    <table class="table table-bordered">
+      <tbody>
+        <tr *ngFor="let e of emps">
+          <td>{{e.Name}}</td>
+          <td>{{e.Age}}</td>
+          <td>{{e.Country}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>-->
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
